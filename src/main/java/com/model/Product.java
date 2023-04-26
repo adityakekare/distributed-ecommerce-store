@@ -1,4 +1,4 @@
-package model;
+package com.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -18,17 +18,19 @@ public class Product {
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
-  @ManyToOne(fetch = FetchType.LAZY)
+//  @ManyToOne(fetch = FetchType.LAZY)
   private Integer id;
 
   private @NotBlank String name;
 
-  private @NotBlank float price;
+  private float price;
 
   @Column(name = "stock_left")
   private int stockLeft;
 
-  public Product(@NotBlank String name, @NotBlank float price) {
+  public Product(){}
+
+  public Product(@NotBlank String name, float price) {
     this.name = name;
     this.price = price;
     this.stockLeft = 1;

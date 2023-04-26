@@ -1,4 +1,8 @@
-package controller;
+package com.controller;
+
+import com.model.Product;
+import com.service.ProductService;
+import com.util.ApiResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -14,18 +18,23 @@ import java.util.List;
 import java.util.Objects;
 
 import jakarta.validation.Valid;
-import model.Product;
-import service.ProductService;
-import util.ApiResponse;
+
 
 @RestController
-@RequestMapping("/product")
+@RequestMapping("/")
 public class ProductController {
 
   @Autowired
   private ProductService productService;
 
-  @GetMapping("/")
+//  @GetMapping
+//  public String getCategories() {
+//    new Test().printTest();
+//    return "Hello";
+//  }
+
+
+  @GetMapping
   public ResponseEntity<List<Product>> getCategories() {
     List<Product> body = productService.listProducts();
     return new ResponseEntity<>(body, HttpStatus.OK);

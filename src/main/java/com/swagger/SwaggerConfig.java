@@ -1,4 +1,4 @@
-package swagger;
+package com.swagger;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -15,9 +15,10 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 import springfox.documentation.swagger2.annotations.EnableSwagger2WebMvc;
 
 //@EnableSwagger2
-//@EnableWebMvc
+
 //@EnableSwagger2WebMvc
 @Configuration
+@EnableWebMvc
 public class SwaggerConfig {
 	@Bean
   public Docket productApi() {
