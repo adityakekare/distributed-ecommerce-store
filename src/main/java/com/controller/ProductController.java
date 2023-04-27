@@ -41,7 +41,6 @@ public class ProductController {
   }
 
   @PostMapping("/create")
-  @RespondeBody
   public ResponseEntity<ApiResponse> createProduct(@Valid @RequestBody Product product) {
     if (Objects.nonNull(productService.readProduct(product.getName()))) {
       return new ResponseEntity<>(new
