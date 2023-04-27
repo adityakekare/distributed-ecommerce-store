@@ -124,6 +124,7 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
+	<packaging>jar</packaging>
 
 	<build>
 		<plugins>

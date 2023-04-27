@@ -45,7 +45,7 @@ public class ProductController {
   }
 
   @PostMapping("/update/{productID}")
-  public ResponseEntity<ApiResponse> updateCategory(@PathVariable("productID") Integer productId, @Valid @RequestBody Product product) {
+  public ResponseEntity<ApiResponse> updateProduct(@PathVariable("productID") Integer productId, @Valid @RequestBody Product product) {
     if (Objects.nonNull(productService.readProduct(productId))) {
       productService.updateProduct(productId, product);
       return new ResponseEntity<>(new ApiResponse(true, "product update complete"), HttpStatus.OK);
