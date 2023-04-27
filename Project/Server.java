@@ -28,9 +28,9 @@ public class Server {
 
     }
     public  void getAllProducts() {
-
+        String productUri = uri+"/product";
         RestTemplate restTemplate = new RestTemplate();
-        String result = restTemplate.getForObject(uri, String.class);
+        String result = restTemplate.getForObject(productUri, String.class);
 
         System.out.println(result);
     }
