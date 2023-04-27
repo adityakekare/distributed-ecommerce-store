@@ -21,20 +21,13 @@ import jakarta.validation.Valid;
 
 
 @RestController
-@RequestMapping("/")
+@RequestMapping("/product")
 public class ProductController {
 
   @Autowired
   private ProductService productService;
 
-//  @GetMapping
-//  public String getCategories() {
-//    new Test().printTest();
-//    return "Hello";
-//  }
-
-
-  @GetMapping
+  @GetMapping(value = { "", "/" })
   public ResponseEntity<List<Product>> getCategories() {
     List<Product> body = productService.listProducts();
     return new ResponseEntity<>(body, HttpStatus.OK);

@@ -22,8 +22,8 @@
 //
 //  private @NotBlank String password;
 //
-//  @OneToOne(cascade = CascadeType.ALL)
-//  @JoinColumn(name = "order_id", referencedColumnName = "id")
+////  @OneToOne(cascade = CascadeType.ALL)
+////  @JoinColumn(name = "id", referencedColumnName = "id")
 //  private Order order;
 //
 //  public Customer(@NotBlank String username, @NotBlank String password) {

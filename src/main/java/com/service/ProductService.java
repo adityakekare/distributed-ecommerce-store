@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
+import com.exception.ResourceNotFoundException;
 import com.model.Product;
 import com.repository.ProductRepository;
 
@@ -27,15 +28,14 @@ public class ProductService {
     return productRepository.findProductByName(product);
   }
 
-  public Optional<Product> readProduct(Integer productId) {
-    return productRepository.findById(productId);
+  public Product readProduct(Integer productId) {
+    return productRepository.findById(productId).orElseThrow(() -> new ResourceNotFoundException("Product not found"));
   }
 
   public void updateProduct(Integer productId, Product newProduct) {
     Product product = productRepository.findById(productId).get();
     product.setName(newProduct.getName());
     product.setPrice(newProduct.getPrice());
-    product.setStockLeft(newProduct.getStockLeft());
     productRepository.save(product);
   }
 }
