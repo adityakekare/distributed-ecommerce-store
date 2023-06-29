@@ -27,7 +27,7 @@ public class Server {
     public Server() {
 
     }
-    public  void getAllProducts() {
+    public void getAllProducts() {
         String productUri = uri+"/product";
         RestTemplate restTemplate = new RestTemplate();
         String result = restTemplate.getForObject(productUri, String.class);
@@ -63,7 +63,6 @@ public class Server {
         HttpResponse<String> response = httpclient.send(postRequest, HttpResponse.BodyHandlers.ofString());
         System.out.println(response.statusCode());
         System.out.println(response.body());
-
 
     }
 //    public static void updateProduct(Integer id, Product product) {

@@ -1,0 +1,44 @@
+Manifest-Version: 1.0
+Main-Class: com.DemoApplication
+Class-Path: springfox-core-3.0.0.jar spring-boot-starter-tomcat-3.0.6.ja
+ r log4j-to-slf4j-2.19.0.jar tomcat-embed-core-10.1.8.jar spring-boot-st
+ arter-aop-3.0.6.jar jackson-module-parameter-names-2.14.2.jar spring-ao
+ p-6.0.8.jar testng-7.7.1.jar spring-cloud-commons-4.0.2.jar spring-clou
+ d-context-4.0.2.jar jackson-annotations-2.14.2.jar jakarta.activation-a
+ pi-2.1.1.jar springfox-spi-3.0.0.jar springfox-oas-3.0.0.jar jackson-da
+ tatype-jsr310-2.14.2.jar swagger-annotations-2.1.2.jar antlr4-runtime-4
+ .10.1.jar spring-web-6.0.8.jar swagger-models-2.1.2.jar spring-plugin-c
+ ore-2.0.0.RELEASE.jar swagger-annotations-1.5.20.jar jul-to-slf4j-2.0.7
+ .jar logback-classic-1.4.7.jar springfox-data-rest-3.0.0.jar spring-exp
+ ression-6.0.8.jar jandex-2.4.2.Final.jar snakeyaml-1.33.jar hibernate-c
+ ore-6.1.7.Final.jar bcpkix-jdk15on-1.69.jar spring-data-jpa-3.0.5.jar t
+ omcat-embed-el-10.1.8.jar jackson-core-2.14.2.jar micrometer-commons-1.
+ 10.6.jar spring-cloud-starter-4.0.2.jar jaxb-core-4.0.2.jar tomcat-embe
+ d-websocket-10.1.8.jar log4j-api-2.19.0.jar jquery-3.6.1.jar spring-jcl
+ -6.0.8.jar h2-1.4.200.jar spring-orm-6.0.8.jar spring-data-commons-3.0.
+ 5.jar txw2-4.0.2.jar jboss-logging-3.5.0.Final.jar springfox-bean-valid
+ ators-3.0.0.jar spring-security-crypto-6.0.3.jar spring-core-6.0.8.jar 
+ hibernate-validator-8.0.0.Final.jar spring-beans-6.0.8.jar spring-boot-
+ autoconfigure-3.0.6.jar spring-aspects-6.0.8.jar classgraph-4.8.83.jar 
+ istack-commons-runtime-4.1.1.jar spring-jdbc-6.0.8.jar springfox-boot-s
+ tarter-3.0.0.jar mapstruct-1.3.1.Final.jar bcprov-jdk15on-1.69.jar jaka
+ rta.persistence-api-3.1.0.jar spring-cloud-starter-bootstrap-4.0.2.jar 
+ springfox-swagger2-3.0.0.jar jackson-datatype-jdk8-2.14.2.jar spring-bo
+ ot-starter-json-3.0.6.jar spring-boot-3.0.6.jar spring-boot-starter-val
+ idation-3.0.6.jar spring-boot-starter-jdbc-3.0.6.jar bcutil-jdk15on-1.6
+ 9.jar byte-buddy-1.12.23.jar springfox-spring-webmvc-3.0.0.jar HikariCP
+ -5.0.1.jar spring-webmvc-6.0.8.jar logback-core-1.4.7.jar spring-boot-s
+ tarter-3.0.6.jar jackson-databind-2.14.2.jar angus-activation-2.0.0.jar
+  spring-security-rsa-1.0.11.RELEASE.jar spring-boot-test-3.0.6.jar jaka
+ rta.annotation-api-2.1.1.jar springfox-swagger-ui-3.0.0.jar jakarta.xml
+ .bind-api-4.0.0.jar spring-context-6.0.8.jar jakarta.transaction-api-2.
+ 0.1.jar jaxb-runtime-4.0.2.jar springfox-spring-webflux-3.0.0.jar sprin
+ g-boot-starter-data-jpa-3.0.6.jar spring-plugin-metadata-2.0.0.RELEASE.
+ jar springfox-swagger-common-3.0.0.jar spring-tx-6.0.8.jar micrometer-o
+ bservation-1.10.6.jar swagger-models-1.5.20.jar spring-boot-starter-web
+ -3.0.6.jar aspectjweaver-1.9.19.jar spring-boot-starter-logging-3.0.6.j
+ ar classmate-1.5.1.jar slf4j-api-2.0.7.jar jcommander-1.82.jar jakarta.
+ validation-api-3.0.2.jar springfox-spring-web-3.0.0.jar springfox-schem
+ a-3.0.0.jar hibernate-commons-annotations-6.0.6.Final.jar jakarta.injec
+ t-api-2.0.0.jar
+

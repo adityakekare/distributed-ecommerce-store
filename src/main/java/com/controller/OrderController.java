@@ -70,14 +70,6 @@ public class OrderController {
     newOrder.setProductOrders(productOrders);
     this.orderService.update(newOrder);
 
-//    String uri = ServletUriComponentsBuilder
-//            .fromCurrentServletMapping()
-//            .path("/orders/{id}")
-//            .buildAndExpand(order.getId())
-//            .toString();
-//    HttpHeaders headers = new HttpHeaders();
-//    headers.add("Location", uri);
-
     return new ResponseEntity<>(newOrder, HttpStatus.CREATED);
   }
 
